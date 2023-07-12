@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de PseudoClassElmentos</title>
+    <style>
+        div:hover{
+            color: red;
+        }
+        div > p{
+            display: none;
+        }
+        div:hover > p {
+            width: 400px;
+            display:block;
+            background-color: yellow;
+        }
+        p:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conteúdo Especial</h1>
+    <div>
+        passe o mouse aqui
+        <p>SURPRESAAAAAA!</p>
+    </div>
+    <p>veja o conteúdo oculto aparecendo</p>
+
+</body>
+</html>
