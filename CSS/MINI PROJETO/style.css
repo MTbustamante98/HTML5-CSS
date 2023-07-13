@@ -11,6 +11,22 @@
     font-family:idroid;
     src: url('fontes/idroid.otf') format('opentype');
 }
+
+@font-face {
+    font-family:biko;
+    src: url('fontes02/Biko_Black.otf') format('opentype');
+    
+}
+
+@font-face {
+    font-family:bikoregular;
+    src: url('fontes02/Biko_Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family:goodtimes;
+    src: url('fonte03/gootimes.otf') format('opentype');
+}
 :root{
     --cor0: #243B28;
     --cor1: #73BD81;
@@ -38,7 +54,7 @@ header{
 }
 
 header > h1{
-    font:normal bold 3.5em monospace;
+    font:normal bold 3.5em goodtimes, sans-serif;
     padding: 30px;
     text-align: center;
     color: white;
@@ -47,7 +63,7 @@ header > h1{
 header > h2 {
     padding: 20px;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'biko',sans-serif;
     color: white;
     text-shadow: 2px 2px 0px rgba(0,0,0,0.466);
 }
@@ -128,13 +144,14 @@ nav a:hover{
     
     }
     
-        .articphgraf{
+    .articphgraf{
         margin: 16px 0px;
         padding: 10px;
         text-align: justify;
         text-indent: 20px;
         line-height: 2.5em;
-        }
+        font-family: bikoregular;
+    }
     
        .articlink{
         color: #196307;
@@ -145,7 +162,7 @@ nav a:hover{
     span{
             background-color: #48C85F;
             color: white;
-        }
+    }
     
     aside {
         background-color: #48c85f59;
