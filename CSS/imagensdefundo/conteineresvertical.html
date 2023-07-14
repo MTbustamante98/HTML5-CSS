@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centralização vertical de conteineres</title>
+    <title>Alinhamento vertical</title>
     <style>
-        div #fora{
-            border: 2px solid yellow;
+         #conteiner{
+            background-color: blueviolet;
+            padding: 10px;
             height: 96vh;
-            background-color: rgb(0, 0, 0);
             position: relative;
-        }
-        
-        div #dentro{
+}
+        #conteudo{
+            background-color: yellow;
             height: 200px;
-            width: 300px;
-            background-color: red;
+            width: 400px;
             position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-        <div id="fora">
-            <div id="dentro">
-            </div>
-        </div>  
+    <section id="conteiner">
+            <article id="conteudo"> 
+            </article>   
+    </section>
+
 </body>
 </html>
