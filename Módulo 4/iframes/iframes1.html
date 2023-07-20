@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Iframe</title>
+<style>
+    .iframe2{
+        display: inline;
+    }
+
+    .iframe3{
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+    <h1>Teste de iframe</h1>
+    <p>Acesse o site <iframe src="https://internacional.com.br/" frameborder="0" width="500" height="500" scrolling="auto" [seu navegador não suporta ifrme]></iframe> Site do Sport Club internacional(RS)</p> 
+<hr>
+    <h1>Teste de iframe com um arquivo HTML </h1>
+    
+    <iframe class="iframe2" src="página02.html
+    " width="600" height="400">
+    <p>Seu navegador não é compatível com a exibição desse conteúdo.</p>
+    </iframe>
+<hr>
+    <h1>Teste de iframe com conteúdo gerado!</h1>
+    
+    <iframe class="iframe3" srcdoc="<h2>teste de título</h2> <p>Esse conteúdo foi fgerado dinamicamente</p>" frameborder="0">
+    </iframe>
+<hr>
+    <h1>Direcionando novo conteúdo para um iframe</h1>
+    <iframe name="quadro" src="página02.html"> <p>Seu navegador não é compatível com a exibição desse recurso.</p></iframe>
+
+
+    <a href="página02.html" target="quadro">Abrir segundo site</a>
+<hr>
+    <h1>Usando propriedade 'sandbox'</h1>
+    <iframe src="https://www.cursoemvideo.com/" frameborder="0" width="400" height="400" scrolling="yes" sandbox="sandbox"></iframe>
+</body>
+</html>
