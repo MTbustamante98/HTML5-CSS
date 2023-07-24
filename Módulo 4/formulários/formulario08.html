@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulario</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        
+        <fieldset><legend>Genêro</legend>
+            <p>
+                <input type="radio" name="sexo" id="imasc">
+                <label for="imasc">Masculino:</label>
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="ifem">
+                <label for="ifem">Feminino:</label>
+            </p>
+        </fieldset>
+
+        
+            <fieldset><legend>Esporte</legend>
+                <p>
+                    <input type="checkbox" name="futebol" id="ifut">
+                    <label for="ifut">Futebol</label>
+                    <input type="checkbox" name="basquete" id="ibasq">
+                    <label for="ibasq">Basquete</label>
+                    <input type="checkbox" name="voltei" id="ivolei">
+                    <label for="ivolei">Vôlei</label>
+                    <input type="checkbox" name="natacao" id="inat">
+                    <label for="inat">Natação</label>
+                </p>
+            </fieldset>
+            
+            <p><input type="submit" value="Enviar">
+            <input type="submit" value="Limpar"></p>   
+            <hr>
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor">
+
+                <p>
+                    <label for="inivel">Nível de satisfação</label>
+                    <input type="range" name="nivel" id="inivel">
+                </p>
+
+                <p>
+                    <label for="ifoto">Escolher arquivo</label>
+                    <input type="file" name="foto" id="ifoto">
+                </p>
+            </p>
+    </form>    
+</body>
+</html>
