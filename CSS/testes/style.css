@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+html, body{
+    background-color: antiquewhite;
+    background-size: cover;
+    background-image: url(imagem/airplane01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    display: grid;
+    margin: 10px;
+    background-color: red;
+    height: 377px;
+    width: 340px;
+    float: right;
+}
+
+div {
+    color: rgb(245, 240, 240);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
