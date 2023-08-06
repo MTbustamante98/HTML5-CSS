@@ -13,18 +13,50 @@ html, body{
     padding: 0px;
 }
 
-div{
-    display: grid;
-    margin: 10px;
-    background-color: red;
+#container{
+    display: flex;
+    margin: 45px;
+    background-color: rgba(0, 0, 0, 0.493);
     height: 377px;
     width: 340px;
-    float: right;
+    float: middle;
+    box-shadow: 1px 0px 12px black;
+    border-radius: 5px 5px;
 }
 
-div {
+.q1 > p {
     color: rgb(245, 240, 240);
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+}
+
+.q1 h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: 0px;
+    padding: 5px;
+}
+
+div #p1{
+    background-image: radial-gradient(circle, rgba(18, 43, 185, 0.671), rgba(241, 241, 241, 0.658));
+    margin: 0px;
+    padding: 12px;
+}
+
+div a{
+    color: white;
+    text-decoration: none;
+}
+
+div a:hover{
+    text-decoration: underline;
+}
+
+pre{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    padding: 0px;
 }
