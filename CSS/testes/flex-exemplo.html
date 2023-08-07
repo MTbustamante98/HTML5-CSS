@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display flex</title>
+    <style>
+        .flex-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: lightgray;
+          height: 200px;
+        }
+    
+        .flex-item {
+          background-color: #3498db;
+          color: white;
+          text-align: center;
+          padding: 0px;
+          font-size: 1em;
+          width: 100px;
+          height: 200px;
+        }
+
+        div{
+            background-color: red;
+            display: inline-block;
+        }
+      </style>
+</head>
+<body>
+    <div class="flex-container">
+        <h1 class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nostrum, beatae ad fugit necessitatibus eum sint, odit dignissimos sunt iure reprehenderit? Natus adipisci neque in quos eum? Eos, earum voluptates?</h1>
+
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem esse, nam a ipsum deserunt officiis quibusdam ea nihil, sapiente voluptate aliquid, quis odit. Accusamus exercitationem ab atque non! Quaerat, eaque?
+        </div>
+      </div>
+
+<!--Neste exemplo, temos uma div com a classe flex-container, que utiliza display: flex. Isso faz com que os elementos filhos dentro da div sejam organizados em uma única linha, lado a lado.
+
+A propriedade justify-content: space-between é usada para distribuir os elementos filhos com espaçamento igual entre eles, preenchendo todo o espaço disponível na linha.
+
+A propriedade align-items: center é usada para alinhar verticalmente os elementos filhos no centro do contêiner flexível.
+
+As caixas são representadas por div com a classe flex-item. Elas são posicionadas lado a lado, com um fundo azul claro (#3498db) e estão centralizadas horizontal e verticalmente dentro de cada caixa.
+
+O resultado é um layout flexível com três caixas alinhadas horizontalmente, com um espaçamento igual entre elas, e o conteúdo centralizado dentro de cada caixa.-->
+</body>
+</html>

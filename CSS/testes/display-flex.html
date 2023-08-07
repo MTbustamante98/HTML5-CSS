@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        body,html{
+            background-color: rgba(233, 190, 190, 0.274);
+            width: 98vw;
+        }
+        #container{
+            display: flex;
+            justify-content: space-between;
+            
+            border: solid 2px black;
+        }
+
+        .box1{
+            background-color: rgba(201, 186, 186, 0.548);
+            width: 100px;
+            height: 100px;
+        }
+
+        #caixa{
+            border: solid 1px black;
+            display: block;
+            justify-content: space-between;
+            margin: 35px;
+        }
+
+        #caixa h1{
+            font-size: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>  
+</body>
+</html>

@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pt-br</title>
     <style>
-        grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 50px 50px;
-    gap: 50px;
+        
+        #container{
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 50px 50px;
+        gap: 50px;
+        background-color: brown;
+        }
         .div1{
-            background-color: rgb(59, 57, 57);
+            background-color: rgb(116, 107, 107);
             height: 200px;
         }
 
@@ -32,11 +37,13 @@
     </style>
 </head>
 <body>
-    <div class="div1"> <h1>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus explicabo in sunt eaque cupiditate quo facilis! Perferendis voluptatum impedit nihil, molestiae maiores atque voluptates, dolores iure nulla, id perspiciatis fuga.
-    </h1></div>
-    <div class="div2"></div>
-    <div class="div3"></div>
-    <div class="div4"></div>
+    <div id="container">
+        <div class="div1"> <h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus explicabo in sunt eaque cupiditate quo facilis! Perferendis voluptatum impedit nihil, molestiae maiores atque voluptates, dolores iure nulla, id perspiciatis fuga.
+        </h1></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+    </div>
 </body>
 </html>

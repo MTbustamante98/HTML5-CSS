@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Display: Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 100px);
+      grid-template-rows: 100px 100px;
+      gap: 35px;
+      justify-content: center;
+      align-items: center;
+      background-color: lightgray;
+      height: 500px;
+    }
+
+    .grid-item {
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+  </div>
+
+<!--Neste exemplo, temos uma div com a classe grid-container, que utiliza display: grid. Definimos as colunas usando grid-template-columns com repeat(3, 100px), o que cria três colunas de 100 pixels cada. As linhas são definidas com grid-template-rows: 100px 200px, resultando em duas linhas com alturas de 100 pixels e 200 pixels, respectivamente.
+
+As caixas são representadas por div com a classe grid-item. Eles serão automaticamente posicionados dentro do contêiner de grade, ocupando as células conforme definido na estrutura da grade. A propriedade gap: 10px adiciona um espaçamento de 10 pixels entre as caixas.
+
+A propriedade justify-content: center alinha o conteúdo horizontalmente dentro do contêiner, e align-items: center alinha o conteúdo verticalmente.
+
+O resultado é uma grade com três colunas e duas linhas, onde cada caixa tem um fundo azul claro (#3498db) e está centralizada com um espaçamento de 10 pixels entre elas.-->
+</body>
+</html>
+</body>
+</html>

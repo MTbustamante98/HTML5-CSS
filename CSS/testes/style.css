@@ -19,7 +19,7 @@ html, body{
     background-color: rgba(0, 0, 0, 0.493);
     height: 377px;
     width: 340px;
-    float: middle;
+    float: right;
     box-shadow: 1px 0px 12px black;
     border-radius: 5px 5px;
 }
