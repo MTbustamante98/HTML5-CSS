@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testeimagensdefundo</title>
     <style>
+        body,html{
+            width: 98vw;
+            margin: 0px;
+        }
+
         .quadrado{
             display: inline-block;
-            margin: 5px;
             width: 300px;
             height: 300px;
             background-color: darkgray;
             border: 2px solid black;
             border-radius: 20px;
         }
+       
+        h1{
+            margin: 0px;
+        }
+        
         #q1{
             background-color: cyan;
+            margin-bottom: 0px;
         }
         
         #q2{
@@ -29,13 +39,24 @@
         #q4{
             background-image: url(imagens/img03.png);
         }
+
+        section{
+            width: 300px;
+            height: 300px;
+            background-color: black;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
     <h1>Imgens de fundo na "DIV"</h1>
-      <div class="quadrado" id="q1"> </div>
-      <div class="quadrado" id="q2"></div> 
+      <div class="quadrado" id="q1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam laboriosam accusamus voluptatibus architecto soluta est laudantium sit. Quod totam minus optio dolore repudiandae iste, fugiat non expedita quos inventore.</p> </div>
+      <div class="quadrado" id="q2"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ipsum iure libero asperiores, unde, voluptate voluptas tempora sunt impedit deserunt voluptatem? Deserunt amet, ducimus debitis porro nostrum quam explicabo labore?</p></div> 
       <div class="quadrado" id="q3"></div>
       <div class="quadrado"  id="q4"></div>
+
+      <section>
+
+      </section>
 </body>
 </html>
