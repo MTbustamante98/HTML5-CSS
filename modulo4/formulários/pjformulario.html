@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        div{
+            border: 2px solid black;
+            display: block;
+            width: 450px;
+            height: 600px;
+            margin: auto;
+            background-color: rgb(46, 43, 226);
+        }
+
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Nos dê seu feedback</h1>
+        <p>Ele é muito importante para melhorarmos a sua experiência</p>
+        <form action="cadastro.php" method="get">
+           Email* <input type="text" name="email" id="imail">
+           <p>O que você achou do nosso serviço?</p>
+           <input type="checkbox" name="fdbk" id="muitobom">
+           <label for="muitobom">Muito Bom</label>
+           <input type="checkbox" name="fdbk" id="bom">
+           <label for="bom">Bom
+            <input type="checkbox" name="Ind" id="indfer">
+            <label for="indfer">Indiferente</label>
+           </label>
+           <input type="checkbox" name="bad" id="ruim">
+           <label for="ruim">Ruim</label>
+           <input type="checkbox" name="muitobad" id="muitoruim">
+           <label for="muitoruim">Muito Ruim</label>
+        </form>
+        <a href="">Dar Feedback</a>
+        <p>Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM</p>
+    </div>
+</body>
+</html>
