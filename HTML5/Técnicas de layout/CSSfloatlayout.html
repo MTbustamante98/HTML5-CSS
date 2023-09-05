@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo css float </title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0px;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+       
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+    @media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+        } 
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Cidades</h2>
+    </header>
+    
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#"></a>Londres</li>
+                <li><a href="#"></a>Paris</li>
+                <li><a href="#"></a>Tokyo</li>
+            </ul>
+        </nav>
+    
+
+    <article>
+        <h1>
+            Londres
+        </h1>
+        <p>
+        Londres é a capital da Inglaterra. É a cidade mais populosa do Reino Unido, com uma área metropolitana de mais de 13 milhões de habitantes.
+
+        De pé no rio Tamisa, Londres tem sido um grande assentamento há dois milênios, sua história remonta à sua fundação pelos romanos, que o chamaram de Londinium.
+        </p>
+    </article>
+    </section>
+    
+    <section>
+        
+        <nav>
+            <ul>
+                <li>Paraná</li>
+                <li>Santa Catarina</li>
+                <li>São Paulo</li>
+            </ul>
+        </nav>
+        
+        <article>
+            <h1> Porto-Alegre </h1>
+
+            <p>
+                Porto Alegre é a capital do estado de Rio Grande do Sul, no sul do Brasil. Na praça principal, a Praça Marechal Deodoro, encontra-se a Catedral Metropolitana, de estilo renascentista, com murais religiosos no exterior. O Palácio Piratini, de estilo neoclássico, é a sede do governo estadual. O Theatro São Pedro, do século XIX, fica nas proximidades. A cidade é conhecida como uma porta de entrada para os enormes desfiladeiros do Parque Nacional de Aparados da Serra. 
+            </p>
+        </article>
+    </section>
+
+    <section>
+        <nav>
+            <ul>
+                <li>Istambul</li>
+                <li>Cida do cabo</li>
+                <li>Joanesburgo</li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1> Cairo </h1>
+            <p>
+                Cairo, a grande capital do Egito, está localizada às margens do rio Nilo. Em seu centro, ficam a Praça Tahrir e o amplo Museu Egípcio, que exibe uma coleção de antiguidades, como múmias reais e artefatos dourados do Rei Tutancâmon. Perto dali fica Gizé, local das famosas pirâmides e da Grande Esfinge, que data do século XXVI a.C. Na área arborizada de Zamalek, na ilha de Gezira, a Torre do Cairo, com 187 m de altura, proporciona vistas panorâmicas da cidade.
+            </p>
+        </article>
+    </section>
+
+    <footer>
+        <p>rodapé
+        </p>
+    </footer>
+</body>
+</html>
