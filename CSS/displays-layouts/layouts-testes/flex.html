@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro teste com CSS Flexbox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        nav {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        iframe {
+            flex: 1;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cidades</h1>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href=""></a>Londres</li>
+                <li><a href=""></a>Paris</li>
+                <li><a href=""></a>Tokyo</li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>
+                Londres
+            </h1>
+        </article>
+    </section>
+
+    <section>
+        <nav>
+            <ul>
+                <li>Paraná</li>
+                <li>Santa Catarina</li>
+                <li>São Paulo</li>
+            </ul>
+        </nav>
+
+        <article>
+            Porto Alegre
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quaerat cum quis facilis corporis deleniti ab? Eius corrupti sed a sint, necessitatibus perspiciatis tempore autem repellendus. Nostrum magnam autem officiis?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quo dicta ex error beatae illum expedita aut voluptatibus perspiciatis earum vitae, voluptas est eius aperiam quidem sapiente quis rerum ducimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae reiciendis aperiam nulla quam veritatis vero iure illo nesciunt tempore! Quidem ipsam aperiam quaerat consectetur. Libero nam tempore consequatur maxime a.
+            </p>
+        </article>
+    </section>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BXqUH86F-kA?si=yEOTwp0gVQGTvr0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+</body>
+</html>
